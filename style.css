@@ -1,0 +1,398 @@
+/* pour toutes les classes */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* pour donner une poloce avec toute la page */
+body{
+    font-family: montserrat;
+}
+/* Le CSS de la partie de navigation */
+ nav{
+    float: right;
+    
+}
+header{
+    width: 100%;
+    background-color: #000;
+}
+header #ima{
+    margin-top: 15px;
+    margin-left: 7%;
+    margin-bottom: 15px;
+}
+nav ul{
+    float: right;
+    margin-right: 90px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    font-weight: 700;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+}
+nav ul li a:hover{
+    /* background: #1b9bff; */
+    transition: .5s; 
+    color: #1ed760;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* la parti responsive de l'entete */
+@media (max-width: 991px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+  nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        top: 80px;
+         left: -100%; 
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+       color: #5c6977;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+} 
+/* ------------------------------------------------------------------------------------------------------------ */
+/* Le corps de la page */
+section{
+    background-image: url("images/fonds.png");
+    background-size: cover;
+    width: 100%;
+    
+}
+section #txt p{
+    color: #1ed760;
+    width: 800px;
+    font-size: 134px;
+    line-height: 104px;
+    padding-bottom: 24px;
+    font-weight: 900;
+    letter-spacing: -0.04em !important;
+    box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+   
+}
+section #txt{
+    padding-top: 200px;
+    margin-left: 180px;
+    
+}
+section #txt #p2{
+    margin-left: 300px;
+    margin-top: 40px;
+}
+section #btn p{
+    padding-top: 40px;
+    margin-left: 480px;
+    color: #1ed760;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+section #btn button{
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 700;
+    border: #60ce86;
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 14px 32px;
+    background-color: #1ed760;
+    color: rgb(41, 65, 171);
+    margin-top: 50px;
+    margin-left: 550px;
+    margin-bottom: 100px;
+}
+/* responsive du corps de la page */
+@media (max-width: 1300px){
+    section #txt p{
+        width: 500px;
+        font-size: 85px;
+        
+       
+    }
+
+}
+
+
+
+@media (max-width: 991px){
+    section{
+        background-color: rgb(41, 65, 171);
+    }
+    section #txt p{
+        
+        width: 100%;
+         font-size: 500%; 
+    }
+    section #txt{
+        padding-top: 100px; 
+        margin-left: 10%;
+        
+    }
+    section #txt #p2{
+         margin-top: -30px; 
+        margin-left: 0%;
+    }
+    section #btn p{
+        padding-top: 0px;
+        margin-left: 10%;
+        
+    }
+    section #btn button{
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+    section .all{
+        margin: auto;
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 591px){
+    section{
+        background-color: rgb(41, 65, 171);
+    }
+    section #txt p{
+        width: 100%;
+         font-size: 400%; 
+    }
+    section #txt{
+        padding-top: 100px; 
+        margin-left: 0%;
+        
+    }
+    section #txt #p2{
+         margin-top: -30px; 
+        margin-left: 0%;
+    }
+    section #btn p{
+        padding-top: 0px;
+        margin-left: 0;
+        
+    }
+    section #btn button{
+        margin-top: 50px;
+    margin-left: 80px;
+    }
+    section .all{
+        margin: auto;
+        width: 90%;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Le pied de la page */
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ ul{
+    list-style: none;
+}
+.footer{
+    background-color: #000;
+    padding: 70px 0;
+
+} 
+.footer-col{
+    width: 200px;
+    /* padding: 0 20px; */
+    margin-top: 30px;
+    margin: 20px;
+}
+
+.footer-col h4{
+    margin-bottom: 20px;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    line-height: 30px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    
+    color: #1ed760;
+}
+
+footer .social-link a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+footer .social-link{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+footer .social-link i{
+    font-size: 30px;
+    padding-top: 10px;
+}
+footer .social-link i:hover{
+    color: #1ed760;
+}
+/* La partie en bas du footer */
+.pied{   
+display: flex;
+background-color: #000;
+padding-left: 85px;
+padding-top: 30px;
+padding-bottom: 50px;
+}
+.pied a{
+    text-decoration: none;
+    color: #919496;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+margin: 15px;
+font-size: 11px;
+}
+#fin{
+    margin-left: 35%;
+    
+}
+#fin #a1{
+    margin-left: 65%;
+}
+/* la partieresponsive */
+
+@media (max-width: 1110px){
+    #fin{
+        margin-left: 5%;
+       
+    }
+    #fin #a1{
+        margin-left: 65%;
+    }
+    
+}
+
+
+@media (max-width: 760px){
+    .footer-col{
+        width: 500%;
+        margin-bottom: 30px;
+        margin: 60px;
+    }
+    .footer-col #soso{
+        margin-left: 0;
+        
+    }
+    .footer .container .row{
+        margin: 40px;
+    }
+    .footer .container .row #imag{
+        margin-bottom: 20px;
+    }
+    #fin{
+        margin-left: 5%;
+        
+    }
+    #fin #a1{
+        margin-left: 5%;
+    }
+    .pied{ 
+        padding-left: 0;
+        }
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+    .footer-col #soso{
+        margin-left: 0%; 
+    }
+    #fin{
+        margin-left: 5%;
+       
+    }
+    #fin #a1{
+        margin-left: 5%;
+    }
+    .pied{ 
+        padding-left: 0px;
+        }
+}

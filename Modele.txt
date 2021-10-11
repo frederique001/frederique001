@@ -1,0 +1,15 @@
+Site: Sportify
+
+link= https://www.spotify.com/us/
+
+
+
+---------------------------------------------------------------------
+Le premier page s'appelle: index.html
+le CSS s'appelle style.css
+----------------------------
+La deuxieme page: page2.html
+Le CSS s'appelle page2.css
+----------------------------
+La troisieme page: page3.html
+le CSS du troisieme page s'appelle page3.css
